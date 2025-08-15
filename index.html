@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
+    <title>Organo</title>
+</head>
+<body>
+    <header class="cabecalho">
+     
+       <div class="cabecalho__coluna__texto">
+
+           <div class="cabecalho__logo__container">
+            <img class="cabecalho__logo" src="src/imagens/Logologo_branco.png" alt="Organo">
+           </div>
+
+           <h1 class="cabecalho__titulo">Pessoas e times</h1>
+           <h2 class="cabecalho__texto">organizados em um só lugar!</h2>
+       </div>
+
+      <img class="cabecalho__img" src="src/imagens/Imagem duotone@2x.png" alt="duotone" height="457">
+
+    </header>
+
+    <main class="conteudo">
+
+        <section class="conteudo__formulario">
+            
+  <h2 class="conteudo__formulario__titulo">Preencha os dados para criar o card do colaborador <h2>
+
+  <div class="conteudo__for">
+    <form action="" method="post">
+
+        <label class="conteudo__lab" for="nome">Nome:</label><br>
+        <input class="conteudo__inpt" type="text" name="nome" id="nome" placeholder="Digite seu nome" required minlength="7"><br>
+
+        <label class="conteudo__lab" for="cargo">Cargo:</label><br>
+        <input class="conteudo__inpt" type="text" name="cargo" id="cargo" placeholder="Digite seu cargo" required><br>
+
+        <label class="conteudo__lab" for="imagem">Imagem:</label><br>
+        <input class="conteudo__inpt" type="text" name="imagem" id="imagem" placeholder="Informe o endereço da imagem" required><br>
+
+        <label class="conteudo__lab" for="time">Time:</label><br>
+        <input class="conteudo__inpt input-com-seta" list="times" id="time" name="time" placeholder="Escolha ou digite um time" required><br>
+
+        <datalist id="times">
+            <option value="Programação">
+            <option value="Front-End">
+            <option value="Data Science">
+            <option value="Devops">
+            <option value="UX e Design">
+            <option value="Mobile">
+            <option value="Inovação e Gestão">
+        </datalist>
+
+      <br><button type="submit" class="conteudo__formulario__botao">Criar Card</button>
+
+    </form>
+  </div>
+ </section>
+
+ <section class="conteudo__organizacao">
+     <h2 class="conteudo__organizacao__titulo">Minha Organização:</h2>
+
+     <div class="conteudo__organizacao__botao">
+       <input class="conteudo__organizacao__chex" type="checkbox" name="botao" id="botao" onchange="toggleFormulario()">
+       <label for="botao"><img src="src/imagens/Botão add-01 1.png" alt="botao"></label>
+     </div>
+
+ </section> 
+ <hr class="conteudo__linha">
+    
+    <section class="conteudo__card programacao conteudo__estilo" >
+       <h2 class="conteudo__card__titulo">Programação</h2>
+           <hr class="conteudo__card__linha">
+       <article class="conteudo__card__dev">
+           <div class="conteudo__card__dev__container conteudo__card__estilo"><div class="conteudo__card__dev__container__imge"><img src="src/imagens/Ellipse 1.png" alt="Juliana Amoasei"></div>
+           <h3 class="conteudo__card__dev__titulo">Juliana Amoasei</h3>
+           <p class="conteudo__card__dev__texto">Desenvolvedora de software e instrutora</p>
+          </div>
+           <div class="conteudo__card__dev__container conteudo__card__estilo"><div class="conteudo__card__dev__container__imge"><img src="src/imagens/Ellipse 4.png" alt="Daniel Artine"></div>
+           <h3 class="conteudo__card__dev__titulo">Daniel Artine</h3>
+           <p class="conteudo__card__dev__texto">Engenheiro de Software <br> na Stone Age</p>
+          </div>
+           <div class="conteudo__card__dev__container conteudo__card__estilo"><div class="conteudo__card__dev__container__imge"><img src="src/imagens/3.png" alt="Guilherme Lima"></div>
+           <h3 class="conteudo__card__dev__titulo">Guilherme Lima</h3>
+           <p class="conteudo__card__dev__texto">Desenvolvedor Python e JavaScript na Alura</p>
+          </div>
+           <div class="conteudo__card__dev__container conteudo__card__estilo"><div class="conteudo__card__dev__container__imge"><img src="src/imagens/Ellipse 2.png" alt="Paulo Silveira"></div>
+           <h3 class="conteudo__card__dev__titulo">Paulo Silveira</h3>
+           <p class="conteudo__card__dev__texto">Hipster e CEO da Alura</p>
+          </div>
+       </article>
+    </section>
+
+    </main>
+    <script src="src/logico.js"></script>
+</body>
+</html>

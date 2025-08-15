@@ -1,0 +1,34 @@
+@charset "UTF-8";
+@import url("header.css");
+@import url("formulario.css");
+@import url("card.css");
+*{
+    box-sizing: border-box;
+}
+
+
+:root{
+  --cores-princiapais-azul: #6278F7;
+  --cores-princiapais-verde-claro: #D4FFEE;
+  --cores-princiapais-braco-leve-escuro: #F2F2F2;
+  --cores-branco:#ffffff;
+
+  --cores-times-fundos-verde-leve: #D9F7E9;
+  --cores-times-fundos-azul-gelo: #E8F8FF;
+  --cores-times-fundos-pastel-suave: #F0F8E2;
+  --cores-times-fundos-rosa-suave: #FDE7E8;
+  --cores-times-fundos-rosa-lavanda-claro: #FAE9F5;
+  --cores-times-fundos-amarelo-baunilha: #FFF5D9;
+  --cores-times-fundos-pessego-claro: #FFEEDF;
+
+  --cores-times-destaques-programação: #57C278;
+  --cores-times-destaques-Front-End: #82CFFA;
+  --cores-times-destaques-Data-Science: #A6D157;
+  --cores-times-destaques-Devops: #E06B69;
+  --cores-times-destaques-UX-e-Design: #DB6EBF;
+  --cores-times-destaques-Mobile: #FFBA05;
+  --cores-times-destaques-Inovação-e-Gestão: #FF8A29;
+  
+  --font-principal:"Montserrat", sans-serif;
+  --font-prata: "Prata", serif;
+}
