@@ -73,3 +73,13 @@
     font-weight: 400;
     text-align: center;
 }
+.conteudo__estilo__front{
+    background-color: var(--cores-times-fundos-azul-gelo);
+}
+.linha__estilo__front{
+     border-color: var(--cores-times-destaques-Front-End);
+    background-color: var(--cores-times-destaques-Front-End);
+}
+.conteudo__card__estilo__front{
+    background-image: linear-gradient(to bottom, #82cefa 0%, #82cefa 33%, #fff 33%, #fff 100%);
+}
